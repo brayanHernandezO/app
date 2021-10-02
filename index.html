@@ -19,8 +19,8 @@
     <section id="formulario">
         <div class="content inputs">
             <h3>Calcular riesgo</h3>
-            <select class="datos" type="text" name="Estado" id="estado" placeholder="Ingrese su estado" rows="32">
-                <option class="inputs">Estado</option>
+            <select class="datos" name="Estado" id="estado" placeholder="Ingrese su estado" rows="32">
+                <option>Estado</option>
                 <option value="Aguascalientes">
                     Aguascalientes
                 </option>
@@ -123,6 +123,15 @@
                 placeholder="Ingrese su codigo postal">
             <input class="datos" type="text" name="Edad" id="edad" placeholder="Ingrese su edad">
             <ul class="ul">
+                <li><select class="datos" name="Sexo" id="sexo" rows="3">
+                        <option>Sexo</option>
+                        <option value="Aguascalientes">
+                            Femenino
+                        </option>
+                        <option value="Baja california">
+                            Masculino
+                        </option>
+                    </select></li>
                 <li>Presentas alguna de estas enfermedades:</li>
                 <li><input class="checkbox" type="checkbox" name="Enfermedad" id="tabaquismo"> Tabaquismo</li>
                 <li><input class="checkbox" type="checkbox" name="Enfermedad" id="obesidad"> Obesidad</li>
@@ -130,6 +139,15 @@
                 <li><input class="checkbox" type="checkbox" name="Enfermedad" id="hipertension"> Hipertensión</li>
                 <li><input class="checkbox" type="checkbox" name="Enfermedad" id="epoc"> Epoc</li>
                 <li><input class="checkbox" type="checkbox" name="Enfermedad" id="diabetes"> Diabetes</li>
+                <li><select class="datos" name="Embarazo" id="embarazo" rows="3">
+                        <option>¿Embarazo?</option>
+                        <option value="1">
+                            Si
+                        </option>
+                        <option value="2">
+                            No
+                        </option>
+                    </select></li>
             </ul>
             <input class="boton" type="submit" value="Calcular">
         </div>

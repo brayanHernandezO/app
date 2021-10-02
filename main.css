@@ -4,10 +4,45 @@
     box-sizing: border-box;
 }
 /*Header*/
-
 header{
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #04afff 100%);
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #04afff 100%); 
+    height: 50px;
 }
+
+.title{
+    text-align: center;
+    padding: auto;
+    color: aliceblue;
+    font-size: 30px;
+    margin-right:50px;
+}
+/*menu*/
+
+.menu{
+
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto; 
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background: rgb(12, 149, 241);
+}
+
 
 /*Body*/
 body {

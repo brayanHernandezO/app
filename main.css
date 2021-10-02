@@ -1,141 +1,164 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/*Header*/
-header{
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #04afff 100%); 
-    height: 50px;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.title{
-    text-align: center;
-    padding: auto;
-    color: aliceblue;
-    font-size: 30px;
-    margin-right:50px;
-}
-/*menu*/
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Document</title>
+</head>
 
-.menu{
+<body>
+    <header id="home">
+        <div class="content">
+            <ul class="menu">
+                <li>
+                    <h1 class="title">COVID-19: Calculate the risk</h1>
+                </li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#resultado">Riesgo calculado</a></li>
+            </ul>
+        </div>
+    </header>
 
-    list-style: none;
-    padding: 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto; 
-}
+    <section id="formulario">
+        <div class="content inputs">
+            <h3>Calcular riesgo</h3>
+            <select class="datos" name="Estado" id="estado" placeholder="Ingrese su estado" rows="32">
+                <option>Estado</option>
+                <option value="Aguascalientes">
+                    Aguascalientes
+                </option>
+                <option value="Baja california">
+                    Baja california
+                </option>
+                <option value="Baja Californi Sur">
+                    Baja Californi Sur
+                </option>
+                <option value="Campeche">
+                    Campeche
+                </option>
+                <option value="Coahuila de Zaragoza">
+                    Coahuila de Zaragoza
+                </option>
+                <option value="Colima">
+                    Colima
+                </option>
+                <option value="Chiapas">
+                    Chiapas
+                </option>
+                <option value="Chihuahua">
+                    Chihuahua
+                </option>
+                <option value="Ciudad de Mexico">
+                    Ciudad de Mexico
+                </option>
+                <option value="Durango">
+                    Durango
+                </option>
+                <option value="Guanajuato">
+                    Guanajuato
+                </option>
+                <option value="Guerrero">
+                    Guerrero
+                </option>
+                <option value="Hidalgo">
+                    Hidalgo
+                </option>
+                <option value="Jalisco">
+                    Jalisco
+                </option>
+                <option value="México">
+                    México
+                </option>
+                <option value="Michoacan de Ocampo">
+                    Michoacán de Ocampo
+                </option>
+                <option value="Morelos">
+                    Morelos
+                </option>
+                <option value="Nayarit">
+                    Nayarit
+                </option>
+                <option value="	Nuevo Leon">
+                    Nuevo León
+                </option>
+                <option value="Oaxaca">
+                    Oaxaca
+                </option>
+                <option value="Puebla">
+                    Puebla
+                </option>
+                <option value="Queretaro">
+                    Querétaro
+                </option>
+                <option value="	Quintana Roo">
+                    Quintana Roo
+                </option>
+                <option value="San Luis Potosí">
+                    San Luis Potosí
+                </option>
+                <option value="	Sinaloa">
+                    Sinaloa
+                </option>
+                <option value="Sonora">
+                    Sonora
+                </option>
+                <option value="Tabasco">
+                    Tabasco
+                </option>
+                <option value="Tamaulipas">
+                    Tamaulipas
+                </option>
+                <option value="Tlaxcala">
+                    Tlaxcala
+                </option>
+                <option value="Veracruz de Ignacio de la Llave">
+                    Veracruz de Ignacio de la Llave
+                </option>
+                <option value="Yucatán">
+                    Yucatán
+                </option>
+                <option value="Zacatecas">
+                    Zacatecas
+                </option>
+            </select>
+            <input class="datos" type="text" name="Municipio" id="municipio" placeholder="Ingrese su municipio">
+            <input class="datos" type="text" name="CodigoPostal" id="codigopostal"
+                placeholder="Ingrese su codigo postal">
+            <input class="datos" type="text" name="Edad" id="edad" placeholder="Ingrese su edad">
+            <ul class="ul">
+                <li><select class="datos" name="Sexo" id="sexo" rows="3">
+                        <option>Sexo</option>
+                        <option value="Aguascalientes">
+                            Femenino
+                        </option>
+                        <option value="Baja california">
+                            Masculino
+                        </option>
+                    </select></li>
+                <li>Presentas alguna de estas enfermedades:</li>
+                <li><input class="checkbox" type="checkbox" name="Enfermedad" id="tabaquismo"> Tabaquismo</li>
+                <li><input class="checkbox" type="checkbox" name="Enfermedad" id="obesidad"> Obesidad</li>
+                <li><input class="checkbox" type="checkbox" name="Enfermedad" id="cardiovascular"> Cardiovascular</li>
+                <li><input class="checkbox" type="checkbox" name="Enfermedad" id="hipertension"> Hipertensión</li>
+                <li><input class="checkbox" type="checkbox" name="Enfermedad" id="epoc"> Epoc</li>
+                <li><input class="checkbox" type="checkbox" name="Enfermedad" id="diabetes"> Diabetes</li>
+                <li><select class="datos" name="Embarazo" id="embarazo" rows="3">
+                        <option>¿Embarazo?</option>
+                        <option value="1">
+                            Si
+                        </option>
+                        <option value="2">
+                            No
+                        </option>
+                    </select></li>
+            </ul>
+            <input class="boton" type="submit" value="Calcular">
+        </div>
+    </section>
+</body>
 
-.menu li a{
-    text-decoration: none;
-    color: white;
-    padding: 16px;
-    display: block;
-}
-
-.menu li{
-    display: inline-block;
-    text-align: center;
-}
-
-.menu li a:hover{
-    background: rgb(12, 149, 241);
-}
-
-
-/*Body*/
-body {
-    background-image: url("covid.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    height: 100vh;
-    background-position: center center;
-    background-attachment: fixed;
-  }
-
-/*Formulario*/
-.inputs{
-    width: 400px;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    
-    padding: 15px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 10px;
-    color: white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-}
-
-.inputs h3{
-    font-size: 25px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.ul{
-    list-style: none;
-}
-
-.datos{
-    width: 100%;
-    padding: 5px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #16d9e3;
-    font-size: 15px;
-   }
-
-.boton{
-    width: 100%;
-    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46adf794 100%);
-    border: none;
-    padding: 8px;
-    color: white;
-    margin: 15px 0;
-    font-size: 18px;
-    align-items: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-    cursor: pointer;
-}
-
-.boton:hover{
-    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
-}
-
-
-.datos{
-    width: 100%;
-    padding: 5px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #16d9e3;
-    font-size: 15px;
-   }
-
-.boton{
-    width: 100%;
-    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46adf794 100%);
-    border: none;
-    padding: 8px;
-    color: white;
-    margin: 15px 0;
-    font-size: 18px;
-    align-items: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-    cursor: pointer;
-}
-
-.boton:hover{
-    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
-}
-
-@media (min-width: 850px) and (max-width: 920px){
-    .lateral{
-    width: 100%;
-    height: max-content;
-    float: right;
-    background-color: #6fe;
-    }
-}
+</html>

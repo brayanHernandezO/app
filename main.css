@@ -33,15 +33,6 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
 
-@media (min-width: 850px) and (max-width: 920px){
-    .lateral{
-    width: 100%;
-    height: max-content;
-    float: right;
-    background-color: #6fe;
-    }
-}
-
 .inputs h3{
     font-size: 25px;
     margin-bottom: 20px;
@@ -103,4 +94,13 @@ body {
 
 .boton:hover{
     background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+@media (min-width: 850px) and (max-width: 920px){
+    .lateral{
+    width: 100%;
+    height: max-content;
+    float: right;
+    background-color: #6fe;
+    }
 }

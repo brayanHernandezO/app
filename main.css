@@ -13,10 +13,13 @@ header{
 body {
     background-color: #04afff;
     background-image: url("covid.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
-    height: 100vh;
+    background-size: 100%;
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+    eight:100%;
+    width:100%;
+    z-index:0.1;
   }
 
 /*Formulario*/
